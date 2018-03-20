@@ -44,4 +44,11 @@ public class ApplicationTest {
         int count = app.countWords("test");
         assertTrue(count == 1);
     }
+
+    @Test
+    public void testIfSquared() {
+        int num = app.squared(5);
+        assertEquals(25, num);
+    }
+
 }

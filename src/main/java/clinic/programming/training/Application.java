@@ -25,8 +25,12 @@ public class Application {
         System.out.println ("Inside Application");
     }
 
-    private static final Logger logger = getLogger(Application.class);
+    public int squared(int num) {
+        num *= num;
+        return num;
+  }
 
+    private static final Logger logger = getLogger(Application.class);
 
     // method main(): ALWAYS the APPLICATION entry point
     public static void main (String[] args) {
@@ -40,4 +44,5 @@ public class Application {
         int count = app.countWords("I have four words");
         System.out.println("Word count: " + count);
     }
+
 }
